@@ -1,7 +1,69 @@
-:root{
+:root {
     --primary-color: #1b334b;
     --secondary-color: #3a3a3a;
-    --accent-color: #007acc;
+    --accent-color: #005e9c;
     --light-color: #e0e0e0;
     --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background: var(--light-color);
+    color: #333333;
+}
+
+header {
+    background: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+header>h1 {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+#student-name {
+    color: #f1d95c;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-bottom: 3px solid #272727;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: .4rem .7rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: var(--accent-color);
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
 }
