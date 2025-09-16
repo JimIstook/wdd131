@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Jim Istook</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Libertinus+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jim Istook. Main page">
-    <meta name="author" content="Jim Istook">
-</head>
-<body>
-    <header>
-        <h1>
-            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-             - 
-            <span id="student-name">Jim Istook</span>
-        </h1>
-        <nav>
-            <a href="www.linkedin.com/in/spencer-istook-78137133a" title="" target="_blank" rel="noreferrer">LinkdIn</a>
-            <a href="https://byupw.instructure.com/" title="" target="_blank" rel="noreferrer">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/5?lang=eng&id=p16#p16" title="" target="_blank" rel="noreferrer">Scripture</a>
-            <a href="#" title="placeholder" target="_blank" rel="noreferrer">Final Project</a>
-        </nav>
-    </header>
-    <main>
-        <section class="card about">
-            <h2>About Me</h2>
-            <div class="about-row">
-                <figure class="about-image">
-                    <img src="images/profile.jpg" alt="Photo of Jim Istook">
-                </figure>
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam eaque doloribus dolore fuga nobis modi praesentium maiores magni delectus.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Jim Istook</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Libertinus+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jim Istook. Main page">
+        <meta name="author" content="Jim Istook">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+                 - 
+                <span id="student-name">Jim Istook</span>
+            </h1>
+            <nav>
+                <a href="www.linkedin.com/in/spencer-istook-78137133a" title="" target="_blank" rel="noreferrer">LinkdIn</a>
+                <a href="https://byupw.instructure.com/" title="" target="_blank" rel="noreferrer">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/5?lang=eng&id=p16#p16" title="" target="_blank" rel="noreferrer">Scripture</a>
+                <a href="#" title="placeholder" target="_blank" rel="noreferrer">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about">
+                    <div class="about-row">
+                        <figure class="about-image">
+                            <img src="images/profile.jpg" alt="Photo of Jim Istook">
+                        </figure>
+                        <div class="about-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa, assumenda hic id adipisci modi fuga facilis dolore distinctio, aspernatur nostrum. Hic eos placeat ex odio veniam eum vitae earum.</p>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <h3>Utah, USA</h3>
+                        <hr>
+                        <div class="location-text">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, vel! Dolore, debitis libero saepe, aspernatur illo voluptatibus voluptate laudantium dolorem modi quae enim, rerum dolorum qui repellendus aliquid consequuntur repudiandae?</p>
+                        </div>
+                        <figure class="flag">
+                            <img src="images/usa-flag.jpg" alt="Official flag of USA">
+                            <figcaption>Official flag of USA</figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <h3>Utah, USA</h3>
-            <div class="location">
-                <div class="location-text">
-                    <p></p>
-                </div>
-                <figure class="flag">
-                    <img src="images/usa-flag.jpg" alt="Official flag of USA">
-                    <figcaption>Official flag of USA</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <ul class="dev-list">
-                <li><a href="https://dev.to/" title="Dev.to homepage" target="_blank" rel="noreferrer">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazine.com/" title="Smashing Magazine homepage" target="_blank" rel="noreferrer">Smashing Magazine</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/" title="MDN Web Docs homepage" target="_blank" rel="noreferrer">MDN Web Docs</a></li>
-                <li><a href="https://www.w3schools.com/" title="W3Schools homepage" target="_blank" rel="noreferrer">W3Schools</a></li>
-                <li><a href="https://placehold.co/" title="Image placeholder creator" target="_blank" rel="noreferrer">Image Placeholder</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © 
-            <span id="currentyear"></span>
-             | Jim Istook | Provo, Utah, USA
-        </p>
-        <p id="lastmodified"></p>
-    </footer>
-</body>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul class="dev-list">
+                    <li><a href="https://dev.to/" title="Dev.to homepage" target="_blank" rel="noreferrer">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" title="Smashing Magazine homepage" target="_blank" rel="noreferrer">Smashing Magazine</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" title="MDN Web Docs homepage" target="_blank" rel="noreferrer">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" title="W3Schools homepage" target="_blank" rel="noreferrer">W3Schools</a></li>
+                    <li><a href="https://placehold.co/" title="Image placeholder creator" target="_blank" rel="noreferrer">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>
+                © 
+                <span id="currentyear"></span>
+                 | Jim Istook | Provo, Utah, USA
+            </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
 </html>

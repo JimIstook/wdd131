@@ -18,6 +18,7 @@ body {
     font-weight: 400;
     background: var(--light-color);
     color: #333333;
+    margin: 0;
 }
 
 header {
@@ -66,4 +67,122 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2.5rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 2px solid #cacaca;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+.card h2 {
+    background: var(--primary-color);
+    color: #ffffff;
+    margin: -1rem -1rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+}
+
+.about-row {
+    display: flex;
+    gap: 3rem;
+    margin-top: .25rem;
+}
+
+.about-image img {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #d6d6d6;
+    display: flex;
+}
+
+.about-text {
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.location {
+    margin-top: -2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0 2rem;
+    align-items: center;
+}
+
+.location hr {
+    grid-column: 2/4;
+    border: 0;
+    height: 2px;
+    background: #cacaca;
+    border-radius: 2px;
+}
+
+.location h3 {
+    grid-column: 2/4;
+    justify-self: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.location-text {
+    grid-column: 2/3;
+    line-height: 1.5;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.flag {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.flag img {
+    width: 160px;
+    height: auto;
+    border: 1px solid #cacaca;
+}
+
+.flag figcaption {
+    margin-top: .5rem;
+    font-size: 12px;
+    font-style: italic;
+    color: #6b6b6b;
+}
+
+.card ul {
+    padding-left: 1.5rem;
+}
+
+.card ul li {
+    margin: .5rem 0;
+}
+
+.card a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+#lastModified {
+    display: inline-block;
+    margin-top: .35rem;
+    color: #fff;
+    padding: .2rem .5rem;
+    font-size: .85rem;
 }
