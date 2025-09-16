@@ -174,7 +174,7 @@ main {
 
 footer {
     background: var(--primary-color);
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
 }
@@ -182,7 +182,7 @@ footer {
 #lastModified {
     display: inline-block;
     margin-top: .35rem;
-    color: #fff;
+    color: #f1d95c;
     padding: .2rem .5rem;
     font-size: .85rem;
 }
