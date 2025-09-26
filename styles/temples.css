@@ -1,0 +1,157 @@
+:root {
+    --background: #1818186e;
+    --main-text: #000000;
+    --brand-bg: #3724e2;
+    --brand-text: #ffffff;
+    --card-bg: #ffffff;
+    --card-border: #474747;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    min-height: 100svh;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    color: var(--main-text);
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    font-weight: 300;
+    background: var(--brand-bg);
+    color: var(--brand-text);
+}
+
+.brand-bar {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .75rem 1rem;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.hamburger {
+    font-size: 1.4rem;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, .35);
+    background: transparent;
+    color: var(--brand-text);
+    border-radius: .5rem;
+    padding: .35rem .6rem;
+    cursor: pointer;
+}
+
+.nav {
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+}
+
+.nav.open {
+    display: block;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.nav a {
+    display: block;
+    padding: .9rem 1rem;
+    color: var(--brand-text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background: rgba(255, 255, 255, .12);
+}
+
+main {
+    width: 100%;
+    max-width: 880px;
+    margin: 1rem auto 2rem;
+    padding: 0 1rem;
+}
+
+#main-title {
+    font-size: 1.25rem;
+    margin: .25rem 0 1rem;
+    color: var(--brand-bg);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure.card {
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: .75rem;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card figcaption {
+    padding: .8rem 1rem;
+    font-size: .95rem;
+}
+
+.card .card-description {
+    display: block;
+    color: var(--main-text);
+    font-size: .8rem;
+    margin-top: .3rem;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background: var(--brand-bg);
+    color: var(--brand-text);
+    padding: .8rem 1rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav {
+        display: block;
+        border-top: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD131 - Picture Album with hamburger menu">
+        <meta name="author" content="Jim Istook">
+        <title>Temple Album</title>
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Libertinus+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <script src="scripts/temples.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="brand-bar">
+                <button id="menu" class="hamburger" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+                <h1 class="brand">Temple Album</h1>
+            </div>
+
+            <nav id="primary-nav" class="nav" aria-label="Main">
+                <ul>
+                    <li><a href="#" data-filter="home">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="main-title">Home</h2>
+            <section id="gallery" class="gallery" aria-live="polite">
+                <noscript>Please enable JavaScript to view the temple gallery.</noscript>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/portland-oregon-temple.jpg" alt="Porland Oregon Temple - Portland, Oregon, USA" width="600"
+                        height="400" loading="lazy">
+                    <figcaption>
+                        <strong>Portland Oregon Temple</strong>
+                        <span class="card-description">Portland, Oregon, USA</span>
+                        <span class="card-description">Dedicated: 1989 | Area: 80,500 ft²</span>
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer>
+            <p>
+                © 
+                <span id="currentyear"></span>
+                 | Jim Istook | Provo, Utah, USA
+            </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>

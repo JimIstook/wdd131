@@ -1,0 +1,39 @@
+.hamburger {
+    display: none
+}
+
+.nav {
+    display: block;
+    border-top: none;
+}
+
+.nav ul {
+    display: flex;
+    gap: .7rem;
+    padding: 0 1rem 1rem;
+}
+
+.nav li {
+    border: 0;
+}
+
+.nav a {
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    background: rgba(255, 255, 255, 0.13);
+    transition: transform .1s ease;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.212);
+}
+
+main {
+    max-width: 1000px;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
