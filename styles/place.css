@@ -1,0 +1,124 @@
+:root {
+    --ink: #0f172a;
+    --muted: #475569;
+    --gap: clamp(12px, 2vw, 20px);
+    --shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    --max: 1440px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--ink);
+    background: white;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 300;
+}
+
+header,
+footer {
+    background-color: #3f4650;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.page-title {
+    margin: 0;
+    padding: 12px 18px;
+}
+
+main {
+    max-width: var(--max);
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    gap: var(--gap);
+    position: relative;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.panel {
+    background: white;
+    padding: var(--gap);
+}
+
+.panel h2 {
+    margin: 0 0 .5rem;
+}
+
+.data-list {
+    margin: 0;
+}
+
+.data-list div {
+    display: flex;
+    gap: .5rem;
+    padding: .25rem 0;
+}
+
+.data-list dt {
+    min-width: 140px;
+    color: var(--muted);
+}
+
+.data-list dd {
+    margin: 0;
+}
+
+.weather-icon {
+    width: 32px;
+    height: 32px;
+    margin: -2.25rem 0 .5rem;
+    float: right;
+}
+
+@media (min-width:1000px) {
+    .panel {
+        position: absolute;
+        backdrop-filter: blur(4px);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: var(--shadow);
+    }
+
+    .place-data {
+        left: clamp(12px, 4vw, 40px);
+        top: clamp(20px, 6vw, 80px);
+        max-width: 320px;
+    }
+
+    .place-weather {
+        right: clamp(12px, 4vw, 40px);
+        bottom: clamp(20px, 6vw, 80px);
+        max-width: 280px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-title::after {
+        content: " 🌧️";
+        margin-left: .25rem;
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+}

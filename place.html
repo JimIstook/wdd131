@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utah - Place Page</title>
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Libertinus+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="page-title">Utah</h1>
+        </header>
+        <main>
+            <section class="hero" aria-label="Hero image">
+                <picture>
+                    <source srcset="images/utah-large.webp" media="(min-width: 1000px)">
+                    <img src="images/utah-small.webp" alt="Utah Arches">
+                </picture>
+                <div class="panel place-data">
+                    <h2>Data</h2>
+                    <dl class="data-list">
+                        <div>
+                            <dt>Area</dt>
+                            <dd>84,899 sq mi</dd>
+                        </div>
+                        <div>
+                            <dt>Population</dt>
+                            <dd>3.5 million</dd>
+                        </div>
+                        <div>
+                            <dt>Capital</dt>
+                            <dd>Salt Lake City</dd>
+                        </div>
+                        <div>
+                            <dt>Languages</dt>
+                            <dd>English</dd>
+                        </div>
+                        <div>
+                            <dt>Currency</dt>
+                            <dd>USD</dd>
+                        </div>
+                        <div>
+                            <dt>Time Zone</dt>
+                            <dd>GMT-6</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="panel place-weather">
+                    <h2 class="weather-title">Weather</h2>
+                    <div class="weather-icon" aria-hidden="true">
+                        <img src="images/light-rain.svg" alt="Light Rain Icon" width="32px" height="32px">
+                    </div>
+                    <dl class="data-list">
+                        <div>
+                            <dt>Temperature</dt>
+                            <dd><span id="temperature">7</span> °C</dd>
+                        </div>
+                        <div>
+                            <dt>Conditions</dt>
+                            <dd>Light rain</dd>
+                        </div>
+                        <div>
+                            <dt>Wind</dt>
+                            <dd><span id="wind-speed">8</span> km/h</dd>
+                        </div>
+                        <div>
+                            <dt>Wind Chill</dt>
+                            <dd><span id="windchill">N/A</span></dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                © 
+                <span id="currentyear"></span>
+                 | Jim Istook | Provo, Utah, USA
+            </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>
