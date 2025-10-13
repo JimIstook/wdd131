@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Site Plan - Poetry</title>
+        <meta name="description" content="WDD 131 Project: planning document for the Poetry website">
+        <meta name="author" content="Jim Istook">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Libertinus+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/siteplan.css">
+        <script src="scripts/siteplan.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="brand">
+                <span id="site-title">Poetry</span>
+                <span class="tagline">Project Site Plan</span>
+            </div>
+        </header>
+
+        <main class="container">
+            <section aria-labelledby="site-name">
+                <h1 id="site-name">Site Name</h1>
+                <p><strong>Poetry</strong> — a site to support aspiring poets by giving resources, and allowing them to save their poetry here.</p>
+            </section>
+
+            <!-- Site Purpose -->
+            <section aria-labelledby="site-purpose">
+                <h2 id="site-purpose">Site Purpose</h2>
+                <ul>
+                    <li>Present a range of resources for aspiring poets.</li>
+                    <li>Allows poets to save their poetry in <code>localStorage</code> to view later.</li>
+                    <li>Provides classic poetry to reference.</li>
+                </ul>
+            </section>
+            <section aria-labelledby="colors">
+                <h2 id="colors">Color Palette</h2>
+                <div class="swatches">
+                    <figure class="swatch">
+                        <div class="box" style="--bg:var(--accent1)"></div>
+                        <figcaption><strong>Accent 1</strong> — Header<br><code>#979797</code></figcaption>
+                    </figure>
+                    <figure class="swatch">
+                        <div class="box" style="--bg:var(--accent2)"></div>
+                        <figcaption><strong>Accent 2</strong> — Buttons<br><code>#4A67C0</code></figcaption>
+                    </figure>
+                    <figure class="swatch">
+                        <div class="box" style="--bg:var(--bg)"></div>
+                        <figcaption><strong>Background</strong> — Page<br><code>#D9DDE9</code></figcaption>
+                    </figure>
+                    <figure class="swatch">
+                        <div class="box" style="--bg:var(--ink)"></div>
+                        <figcaption><strong>Ink</strong> — Text<br><code>#020C1B</code></figcaption>
+                    </figure>
+                    <figure class="swatch">
+                        <div class="box" style="--bg:var(--link)"></div>
+                        <figcaption><strong>Link</strong> — Body links<br><code>#0962E7</code></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section aria-labelledby="type">
+                <h2 id="type">Typography</h2>
+                <ul>
+                    <li><strong>Comfortaa</strong> — headers, body text, navigation, UI</li>
+                </ul>
+            </section>
+            <section aria-labelledby="wires">
+                <h2 id="wires">Wireframe</h2>
+                <div class="wireframes">
+                    <figure>
+                      <figcaption>Mobile</figcaption>
+                      <svg viewBox="0 0 320 560" role="img" aria-labelledby="wf-mobile-title">
+                        <title id="wf-mobile-title">Mobile wireframe</title>
+                        <rect x="1" y="1" width="318" height="558" rx="16" fill="none" stroke="#0B3D91" stroke-width="2"/>
+                        <rect x="16" y="16" width="288" height="56" rx="8" fill="#0B3D91" opacity=".15" />
+                        <rect x="16" y="84" width="288" height="120" rx="8" fill="#0050B3" opacity=".12" />
+                        <rect x="16" y="216" width="288" height="88" rx="8" fill="#0B3D91" opacity=".08" />
+                        <rect x="16" y="312" width="288" height="88" rx="8" fill="#0B3D91" opacity=".08" />
+                        <rect x="16" y="408" width="288" height="88" rx="8" fill="#0B3D91" opacity=".08" />
+                        <rect x="16" y="508" width="288" height="36" rx="8" fill="#0050B3" opacity=".12" />
+                      </svg>
+                    </figure>
+                    <figure>
+                        <figcaption>Desktop</figcaption>
+                        <svg viewBox="0 0 960 560" role="img" aria-labelledby="wf-desktop-title">
+                            <title id="wf-desktop-title">Desktop wireframe</title>
+                            <rect x="1" y="1" width="958" height="558" rx="8" fill="none" stroke="#0B3D91" stroke-width="2"/>
+                            <rect x="16" y="16" width="928" height="72" rx="8" fill="#0B3D91" opacity=".15" />
+                            <rect x="16" y="100" width="928" height="160" rx="8" fill="#0050B3" opacity=".12" />
+                            <rect x="16"  y="276" width="300" height="120" rx="8" fill="#0B3D91" opacity=".08" />
+                            <rect x="330" y="276" width="300" height="120" rx="8" fill="#0B3D91" opacity=".08" />
+                            <rect x="644" y="276" width="300" height="120" rx="8" fill="#0B3D91" opacity=".08" />
+                            <rect x="16"  y="408" width="300" height="120" rx="8" fill="#0B3D91" opacity=".08" />
+                            <rect x="330" y="408" width="300" height="120" rx="8" fill="#0B3D91" opacity=".08" />
+                            <rect x="644" y="408" width="300" height="120" rx="8" fill="#0B3D91" opacity=".08" />
+                        </svg>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                © 
+                <span id="currentyear"></span>
+                 | Jim Istook | Provo, Utah, USA
+            </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>

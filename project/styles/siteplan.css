@@ -1,0 +1,139 @@
+:root {
+    /* Contrast-safe blues */
+    --ink: #020c1b;
+    --bg: #d9dde9;
+    --card: #ebedf3;
+    --accent1: #979797;
+    --accent2: #4a67c0;
+    --link: #0962e7;
+    --link-hover: #084298;
+    --border: #1e90ff;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+html, body { 
+    margin: 0; padding: 0; 
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+}
+
+h1, h2, h3, #site-title {
+    font-weight: 300;
+    margin: 0 0 .5rem;
+}
+
+.site-header {
+    background: var(--accent1);
+    color: #fff;
+    padding: 1rem;
+}
+
+.brand { 
+    max-width: 72rem; 
+    margin: 0 auto; 
+}
+
+#site-title { 
+    display: block; 
+    font-size: 1.8rem; 
+}
+
+.tagline { 
+    display: block; 
+    opacity: .9; 
+}
+
+.container {
+    max-width: 72rem;
+    margin: 1rem auto 2.5rem;
+    padding: 0 1rem;
+}
+
+section { 
+    margin:1.25rem 0 2rem; 
+}
+
+.swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: .75rem;
+    margin: 1rem 0;
+}
+
+.swatch {
+    background: var(--card);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: .75rem;
+}
+
+.swatch .box {
+    width: 100%;
+    height: 70px;
+    border-radius: .5rem;
+    background: var(--bg);
+    border: 1px solid #cbd5e1;
+    margin-bottom: .5rem;
+}
+
+.sample-head { 
+    font-size:1.5rem; 
+}
+
+code { 
+    background: #eef5ff; 
+    padding: .1rem .3rem; 
+    border-radius: .25rem; 
+}
+
+.wireframes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.wireframes figure {
+    background: var(--card);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: .75rem;
+}
+
+.wireframes figcaption {
+    font-weight: 700; 
+    margin-bottom: .5rem;
+}
+
+svg { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+footer {
+    background-color: #3f4650;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: .95rem;
+}
+
+@media (min-width: 770px) {
+    .type-samples { 
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .wireframes { 
+        grid-template-columns: 1fr 1fr; 
+    }
+}
