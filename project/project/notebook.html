@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD131 - Poetry final project">
+        <meta name="author" content="Jim Istook">
+        <title>Poetry - Notebook</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Libertinus+Serif&family=Zilla+Slab&display=swap" rel="stylesheet">
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/notebook.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="brand-bar">
+                <button id="menu" class="hamburger" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+                <h1 class="brand">Poetry Notebook</h1>
+            </div>
+            <div class="brand-icon"><img src="images/logo.svg" alt=""></div>
+            <nav id="primary-nav" class="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Resources</a></li>
+                    <li><a href="notebook.html" class="active">Notebook</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 class="main-title">Make a Note</h2>
+            <div class="notebook-form">
+                <form id="poetry-form" method="get">
+                    <div class="title-box">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" maxlength="50" required>
+                    </div>
+                    <div class="author-box">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" maxlength="50"required>
+                    </div>
+                    <div class="poem-box">
+                        <label for="poeminput">Poem:</label>
+                        <textarea id="poem-input" name="poeminput" cols="30" rows="8" maxlength="2000"required></textarea>
+                    </div>
+                    <input class="poem-button" type="submit" value="Add To Notebook">
+                </form>
+            </div>
+            <div id="notebook-grid" class="card-grid">
+
+            </div>
+        </main>
+        <footer>
+            <p>© <span id="currentyear"></span> | Jim Istook | Provo, Utah, USA</p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>
